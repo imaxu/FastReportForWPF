@@ -1,0 +1,54 @@
+﻿<Window x:Class="FastReportDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:FastReport.Preview;assembly=FastReport"
+        xmlns:winHost="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        Title="MainWindow" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="540,*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Button x:Name="btnCreateNew" Width="80" HorizontalAlignment="Left" Content="新建报表" Click="btnCreateNew_Click" />
+                <StackPanel Width="20" />
+                <Button x:Name="btnRunDesigner" Width="80" HorizontalAlignment="Left" Content="启动设计器" IsEnabled="False" Click="btnRunDesigner_Click" />
+            </StackPanel>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"></ColumnDefinition>
+                <ColumnDefinition Width="380,*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0"   VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100,*"></RowDefinition>
+                    <RowDefinition Height="160"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid VerticalAlignment="Stretch">
+                    <ListView Grid.Row="0" x:Name="lvReportItems" SelectionChanged="lvReportItems_SelectionChanged"  VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" />
+                </Grid>
+                <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <GroupBox Header="描述" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <TextBlock Name="txtDescription" TextWrapping="WrapWithOverflow"  ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                    </GroupBox>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="285,*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <winHost:WindowsFormsHost>
+                        <uc:PreviewControl x:Name="frPreviewControl"/>
+                    </winHost:WindowsFormsHost>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

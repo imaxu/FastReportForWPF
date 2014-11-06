@@ -1,0 +1,21 @@
+﻿<Window x:Class="FastReportDemo.BlankReportDesginerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:winHost="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:Designer="clr-namespace:FastReport.Design.StandardDesigner;assembly=FastReport"
+        Title="盈加报表工具-创建报表" Height="600" Width="800"  WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition Height="540,*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            
+        </Grid>
+        <Grid Grid.Row="1" >
+            <winHost:WindowsFormsHost>
+                <Designer:DesignerControl x:Name="designer" />
+            </winHost:WindowsFormsHost>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="11/05/2014 15:06:48" ReportInfo.Modified="11/05/2014 15:09:51" ReportInfo.CreatorVersion="2013.2.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text1" Left="122.85" Width="94.5" Height="18.9" Font="宋体, 9pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="85.05" DataSource="">
+      <PictureObject Name="Picture1" Left="122.85" Top="9.45" Width="75.6" Height="75.6"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="163.2" Width="718.2" Height="18.9"/>
+  </ReportPage>
+  <ReportPage Name="Page2">
+    <ReportTitleBand Name="ReportTitle2" Width="718.2" Height="37.8"/>
+    <PageHeaderBand Name="PageHeader2" Top="41.8" Width="718.2" Height="28.35"/>
+    <DataBand Name="Data2" Top="74.15" Width="718.2" Height="75.6" DataSource=""/>
+    <PageFooterBand Name="PageFooter2" Top="153.75" Width="718.2" Height="18.9"/>
+  </ReportPage>
+  <ReportPage Name="Page3">
+    <ReportTitleBand Name="ReportTitle3" Width="718.2" Height="37.8"/>
+    <PageHeaderBand Name="PageHeader3" Top="41.8" Width="718.2" Height="103.95">
+      <PictureObject Name="Picture2" Left="132.3" Top="28.35" Width="75.6" Height="75.6"/>
+    </PageHeaderBand>
+    <DataBand Name="Data3" Top="149.75" Width="718.2" Height="75.6"/>
+    <PageFooterBand Name="PageFooter3" Top="229.35" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

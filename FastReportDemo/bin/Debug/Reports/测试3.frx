@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="11/05/2014 15:08:31" ReportInfo.Modified="11/05/2014 15:08:53" ReportInfo.CreatorVersion="2013.2.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="47.25">
+      <ShapeObject Name="Shape1" Left="170.1" Top="28.35" Width="94.5" Height="18.9"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="51.25" Width="718.2" Height="28.35"/>
+    <DataBand Name="Data1" Top="83.6" Width="718.2" Height="85.05">
+      <SubreportObject Name="Subreport1" Top="9.45" Width="94.5" Height="18.9" ReportPage="Page2"/>
+      <PictureObject Name="Picture1" Left="189" Top="9.45" Width="75.6" Height="75.6"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="172.65" Width="718.2" Height="18.9"/>
+  </ReportPage>
+  <ReportPage Name="Page2">
+    <DataBand Name="Data2" Width="718.2" Height="75.6"/>
+  </ReportPage>
+</Report>
